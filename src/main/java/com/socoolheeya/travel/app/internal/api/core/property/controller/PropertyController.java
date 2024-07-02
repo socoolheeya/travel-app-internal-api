@@ -56,9 +56,9 @@ public class PropertyController {
                 .body(PropertyResponse.Modify.builder()
                         .property(propertyService.modify(Property.builder()
                                 .id(propertyId)
-                                .koName(request.getKoName())
-                                .enName(request.getEnName())
-                                .isEnabled(request.getIsEnabled())
+                                .name(request.getName())
+                                .description(request.getDescription())
+                                .isActive(request.getIsActive())
                                 .build()))
                         .build());
     }

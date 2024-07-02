@@ -55,9 +55,9 @@ public class PropertyRequest {
     @FieldDefaults(level = AccessLevel.PRIVATE)
     public static class Modify {
         Long id;
-        String koName;
-        String enName;
-        Boolean isEnabled;
+        String name;
+        String description;
+        Boolean isActive;
     }
 
     @Getter
