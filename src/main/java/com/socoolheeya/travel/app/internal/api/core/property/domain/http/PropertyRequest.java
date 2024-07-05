@@ -11,7 +11,6 @@ import lombok.Setter;
 import lombok.experimental.FieldDefaults;
 import lombok.experimental.UtilityClass;
 
-import java.util.HashSet;
 import java.util.Set;
 
 @UtilityClass
@@ -31,7 +30,7 @@ public class PropertyRequest {
         Set<CommonSupplierEnums> suppliers;
 
         @Builder.Default
-        Boolean isEnabled = true;
+        Boolean isActive = true;
 
         @Builder.Default
         Boolean canBookSameDay = false;

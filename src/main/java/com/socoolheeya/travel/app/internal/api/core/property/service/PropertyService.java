@@ -25,7 +25,7 @@ public class PropertyService {
     public Page<Property> searchByConditions(PropertyRequest.Search request, Pageable pageable) {
         PropertySearchCriteria searchCriteria = PropertySearchCriteria.builder()
                 .language(request.getLanguage())
-                .isEnabled(request.getIsEnabled())
+                .isActive(request.getIsActive())
                 .suppliers(request.getSuppliers())
                 .build();
         return propertyQueryService.searchProperties(searchCriteria, pageable);
